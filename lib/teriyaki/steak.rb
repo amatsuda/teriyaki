@@ -12,4 +12,4 @@ ROUTE
   end
 end
 
-Rspec.configuration.include(m)
+RSpec.configuration.include(m)
