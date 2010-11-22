@@ -1,6 +1,12 @@
 = Teriyaki
 
-Automatically imports *_path definitions from config/routes.rb for acceptance testing
+Require teriyaki gem in the Gemfile.
+
+    gem 'teriyaki', :group => :test
+
+And bundle.
+
+    % bundle
 
 == Note on Patches/Pull Requests
 
@@ -17,11 +23,7 @@ Automatically imports *_path definitions from config/routes.rb for acceptance te
 
 == Usage
 
-Add this simple line to your spec/acceptance/acceptance_helper.rb
-
-  require 'teriyaki/steak'
-
-This will automatically add *_path helper methods for the acceptance testing context.
+This will automatically add url_helper methods from config/routes.rb for the acceptance testing context.
 
 No need to touch paths.rb anymore!
 

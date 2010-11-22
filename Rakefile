@@ -5,12 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = 'teriyaki'
-    gem.summary = %Q{Automatically imports *_path definitions from config/routes.rb for acceptance testing}
+    gem.summary = %Q{Automatically imports url_helper methods from config/routes.rb for acceptance testing}
     gem.description = %Q{You don't need to write paths.rb manually anymore!}
     gem.email = 'ronnie@dio.jp'
     gem.homepage = 'http://github.com/amatsuda/teriyaki'
     gem.authors = ['Akira Matsuda']
-    gem.add_development_dependency 'rspec', '>= 1.2.9'
+    gem.add_development_dependency 'rspec', '>= 2.0.0'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
